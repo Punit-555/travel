@@ -1,0 +1,123 @@
+@use './_variables' as *;
+
+.settings{
+    padding: 130px 200px 0 200px;
+
+    @media screen and (max-width: $xl){
+        padding: 130px 0 0 0;
+    }
+
+    @media screen and (max-width: $md){
+        padding: 110px 0 0 0;
+    }
+    
+
+    &__title{
+        font-size: 2.25rem;
+        font-weight: 400;
+        color: $secondary;
+        margin-bottom: 15px;
+        line-height: 1.2;
+    }
+
+    &__subtitle{
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.4;
+        color: $secondary;
+        margin-bottom: 35px;
+
+        @media screen and (max-width: $md){
+            margin-bottom: 20px;
+        }
+    }
+
+    &__list{
+        &--item{
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 0;
+            border-bottom: 1px solid $border;
+
+            &-column{
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                
+                .settings__flex--row{
+                    margin-bottom: 30px;
+                }
+            }
+            
+        }
+
+        &--title{
+            font-family: 'Brown' !important;
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-bottom: 10px;
+            line-height: 1.5;
+            color: $secondary;
+        }
+
+        &--details{
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-bottom: 0;
+            color: $secondary;
+            line-height: 1.2;
+        }
+    }
+
+    &__flex{
+        &--row{
+            flex: 0 0 80%;
+        }
+    }
+
+    &__toggle{
+        &--list{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 1rem 2rem;
+
+            @media screen and (max-width: $sm){
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+            }
+
+
+            .form__group--toggle{
+                display: flex;
+                align-items: center;
+
+                @media screen and (min-width: $md){
+                    margin-right: 30px;
+                }
+
+                @media screen and (max-width: $sm){
+                    width: 100%;
+                    margin-right: 0;
+                    flex-direction: row-reverse;
+                    justify-content: space-between;
+                }
+
+                span{
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    color: $secondary;
+                    margin-left: 10px;
+
+                    @media screen and (max-width: $sm){
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}

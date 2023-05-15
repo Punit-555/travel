@@ -1,0 +1,54 @@
+.emojiContainer {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  left: 10px;
+}
+
+.emojiContainer img {
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+}
+
+.emoji-image1 {
+  position: relative;
+  top: 70px;
+  left: -60px;
+}
+
+.emoji-image2 {
+  position: relative;
+  left: -80px;
+  bottom: 35px;
+}
+.emoji-image3 {
+  position: relative;
+  left: -50px;
+  bottom: 95px;
+}
+
+.emoji-image4 {
+  position: relative;
+  left: 10px;
+  bottom: 95px;
+}
+
+.emoji-image5 {
+  position: relative;
+  left: 50px;
+  bottom: 30px;
+}
+.emoji-image6 {
+  position: relative;
+  left: 30px;
+  top:80px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+}

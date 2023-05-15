@@ -1,0 +1,306 @@
+@use './_variables' as *;
+
+/* The Modal (background) */
+.modal {
+  
+    position: fixed;
+    z-index: 999;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    // background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+
+    @media screen and (max-width: $sm){
+        padding-bottom: 50px;
+        padding-top: 80px;
+        background-color: transparent;
+        z-index: 100;
+        overflow: hidden;
+    }
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: $white;
+    margin: auto;
+    padding: 30px 40px;
+    box-shadow: 0px 3px 16px #00000024;
+    border-radius: 12px;
+    max-width: 760px;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+
+    @media screen and (max-width: $lg){
+        width: 80%;
+    }
+
+    @media screen and (max-width: $md){
+        padding: 20px;
+    }
+
+    @media screen and (max-width: $sm){
+        width: 100%;    
+        box-shadow: none;
+        border-radius: 0;
+        height: calc(100vh - 80px);
+        overflow-y: auto;
+    }
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+/* The Close Button */
+.close {
+    display: block;
+    cursor: pointer;
+    transition: all $easeTime ease;
+    position: absolute;
+    right: -25px;
+    top: -15px;
+    z-index: 1;
+
+    @media screen and (max-width: $md){
+        right: -8px;
+        top: -8px;
+    }
+
+    svg{
+        width: 28px;
+        height: 28px;
+        path{
+            fill: $border;
+            transition: all $easeTime ease;
+        }
+    }
+
+    img{
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        border: 1px solid $border;
+        transition: all $easeTime ease;
+    }
+
+    &:hover{
+        img{
+            border-color: $primary;
+            transition: all $easeTime ease;
+        }
+        svg{
+            path{
+                fill: $primary;
+                transition: all $easeTime ease;
+            }
+        }
+    }
+}
+
+.modal-header {
+    position: relative;
+
+    h2{
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: $secondary;
+        margin-bottom: 1rem;
+    }
+}
+
+.modal-body {
+    p{
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 24px;
+        color: $secondary;
+        margin-bottom: 20px;
+    }
+    .card{
+        background: $white;
+        border: 1px solid $border;
+        border-radius: 6px;
+        padding: 10px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        @media screen and (max-width: $sm){
+            flex-direction: column;
+        }
+
+        &__info{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: row;
+            margin: 0;
+            width: 60%;
+
+            @media screen and (max-width: $md){
+                width: 50%;
+            }
+
+            @media screen and (max-width: $sm){
+                flex-direction: column;
+                width: 100%;
+            }
+
+            &--image{
+                width: 42px;
+                height: 42px;
+                flex: 0 0 42px;
+                margin-right: 10px;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 6px;
+                    object-fit: cover;
+                }
+
+                @media screen and (max-width: $sm){
+                    width: 100%;
+                    height: 250px;
+                    flex: 0 0 auto;
+                    margin: 0 0 20px 0;
+                }
+            }
+
+            &--details{
+                h4{ 
+                    font-family: 'Brown' !important;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    color: $secondary;
+                    line-height: 20px;
+                }
+                p{
+                    font-size: 0.875rem;
+                    font-weight: 400;
+                    color: $secondary;
+                    margin: 0;
+                }
+
+                @media screen and (max-width: $sm){
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        &__review{
+            display: flex;
+            align-items: center;
+
+            @media screen and (max-width: $sm){
+                width: 100%;
+            }
+
+            .review{
+                font-family: 'Brown';
+                font-size: 0.875rem;
+                font-weight: 400;
+                margin-left: 10px;
+                color: $secondary;
+                padding-top: 2px;
+
+                span{
+                    font-family: 'BrownMedium';
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .ratings{
+        &__row{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+
+            &--item{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                width: 50%;
+            }
+        }
+
+        &--title{
+            @include font('Brown', 1rem, 400, 1);
+            color: $secondary;
+            margin-bottom: 10px;
+        }
+    }
+
+    .modal-image{
+        text-align: center;
+        margin: 20px 0;
+        img{
+            width: 80%;
+        }
+    }
+}
+
+.modal-footer {
+    .form__group{
+        textarea{
+            font-size: 1rem;
+            resize: none;
+            background: $white;
+            border: 1px solid $border;
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 30px;
+            width: 100%;
+            &:focus{
+                outline: 0;
+            }
+
+            @media screen and (max-width: $sm){
+                margin-bottom: 0;
+            }
+        }
+    }
+    .btn{
+        font-size: 1rem;
+        padding: 12px 45px;
+        font-family: 'Poppins';
+        @media screen and (max-width: $sm){
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+  <g id="overwhelmed" transform="translate(-16023 -7109)">
+    <circle id="Ellipse_12" data-name="Ellipse 12" cx="26" cy="26" r="26" transform="translate(16023 7109)" fill="#55bf3b"/>
+    <g id="Group_208" data-name="Group 208" transform="translate(15731.5 6050)">
+      <path id="Icon_awesome-heart" data-name="Icon awesome-heart" d="M12.244.811a3.622,3.622,0,0,0-4.942.36l-.522.538-.522-.538A3.622,3.622,0,0,0,1.317.811a3.8,3.8,0,0,0-.262,5.506l5.125,5.292a.83.83,0,0,0,1.2,0L12.5,6.317a3.8,3.8,0,0,0-.26-5.506Z" transform="translate(322.86 1071.815) rotate(22)" fill="#fff"/>
+      <path id="Icon_awesome-heart-2" data-name="Icon awesome-heart" d="M12.244,11.054a3.622,3.622,0,0,1-4.942-.36l-.522-.538-.522.538a3.622,3.622,0,0,1-4.942.36,3.8,3.8,0,0,1-.262-5.506L6.179.256a.83.83,0,0,1,1.2,0L12.5,5.548a3.8,3.8,0,0,1-.259,5.506Z" transform="translate(315.945 1082.816) rotate(158)" fill="#fff"/>
+      <g id="Rectangle_157" data-name="Rectangle 157" transform="translate(303.5 1090)" fill="#fff" stroke="#fff" stroke-width="1">
+        <path d="M0,0H28a0,0,0,0,1,0,0V0a9,9,0,0,1-9,9H9A9,9,0,0,1,0,0V0A0,0,0,0,1,0,0Z" stroke="none"/>
+        <path d="M.5.5h27a0,0,0,0,1,0,0v0a8,8,0,0,1-8,8H8.5a8,8,0,0,1-8-8v0A0,0,0,0,1,.5.5Z" fill="none"/>
+      </g>
+      <path id="Rectangle_158" data-name="Rectangle 158" d="M0,0H22a0,0,0,0,1,0,0V0a6,6,0,0,1-6,6H6A6,6,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(306.5 1090)" fill="#55bf3b"/>
+    </g>
+  </g>
+</svg>

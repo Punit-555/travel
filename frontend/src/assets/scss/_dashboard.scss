@@ -1,0 +1,105 @@
+@use './_variables' as *;
+
+.vibeMeter{
+    margin: 100px 0;
+
+    @media screen and (max-width: $sm){
+        margin: 50px 0;
+    }
+
+    .container{
+        padding: 0;
+
+        @media screen and (max-width: $md){
+            max-width: 100%;
+            padding: 0 1.25rem;
+        }
+    }
+
+    &__title{
+        font-size: 2.25rem;
+        font-weight: 200;
+        color: $secondary;
+        margin-bottom: 1.875rem;
+        @media screen and (max-width: $md){
+            font-size: 1.5rem;
+        }
+        @media screen and (max-width: $sm){
+            font-size: 1.2rem;
+        }
+    }
+
+    .grid__row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+
+        @media screen and (max-width: $md){
+            grid-template-columns: 1fr;
+        }
+    }
+    .grid__col{
+        box-shadow: 0px 3px 14px #0000000A;
+        border: 1px solid $border;
+        border-radius: 10px;
+        padding: 50px;
+
+        @media screen and (max-width: $md){
+            padding: 20px;
+        }
+
+        img{
+            width: 100%;
+            position: relative;
+            z-index: 30;
+        }
+
+        &.meter{
+            position: relative;
+            .background-colorBox{
+                position: absolute;
+                bottom: 30px;
+                top: 30px;
+                left: 30px;
+                right: 30px;
+                z-index: 10;
+                filter: blur(30px);
+                .colorBox{
+                    box-shadow: 0px 3px 14px #0000000A;
+                    border-radius: 116px;
+                    opacity: 0.2;
+                    width: 60%;
+                    height: 100%;
+                }
+                .color1{
+                    background-color: #55BF3B;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                }
+                .color2{
+                    background-color: #ACE50D;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                }
+            }
+        }
+
+        &.graph{
+            .graph__title{
+                font-size: 1.125rem;
+                font-weight: 400;
+                color: $secondary;
+                text-align: center;
+                margin-bottom: 30px;
+
+                @media screen and (max-width: $sm){
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}

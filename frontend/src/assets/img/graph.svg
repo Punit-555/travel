@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="726.5" height="327" viewBox="0 0 726.5 327">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff385c" stop-opacity="0.569"/>
+      <stop offset="1" stop-color="#ff385c" stop-opacity="0.031"/>
+    </linearGradient>
+    <filter id="Ellipse_9" x="92" y="111.5" width="41" height="41" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4.5" result="blur"/>
+      <feFlood flood-color="#ff385c"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_9-2" x="156" y="66.5" width="41" height="41" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4.5" result="blur-2"/>
+      <feFlood flood-color="#ff385c"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_9-3" x="219" y="110.5" width="41" height="41" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4.5" result="blur-3"/>
+      <feFlood flood-color="#ff385c"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_9-4" x="282" y="66.5" width="41" height="41" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4.5" result="blur-4"/>
+      <feFlood flood-color="#ff385c"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_9-5" x="345" y="22.5" width="41" height="41" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4.5" result="blur-5"/>
+      <feFlood flood-color="#ff385c"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_9-6" x="408" y="66.5" width="41" height="41" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4.5" result="blur-6"/>
+      <feFlood flood-color="#ff385c"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_9-7" x="471" y="110.5" width="41" height="41" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4.5" result="blur-7"/>
+      <feFlood flood-color="#ff385c"/>
+      <feComposite operator="in" in2="blur-7"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_9-8" x="534" y="66.5" width="41" height="41" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4.5" result="blur-8"/>
+      <feFlood flood-color="#ff385c"/>
+      <feComposite operator="in" in2="blur-8"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_9-9" x="597" y="22.5" width="41" height="41" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4.5" result="blur-9"/>
+      <feFlood flood-color="#ff385c"/>
+      <feComposite operator="in" in2="blur-9"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_9-10" x="659" y="22.5" width="41" height="41" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4.5" result="blur-10"/>
+      <feFlood flood-color="#ff385c"/>
+      <feComposite operator="in" in2="blur-10"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="graph" transform="translate(-1004 -1016)">
+    <text id="Your_activity_dates" data-name="Your activity dates" transform="translate(1368 1338)" fill="#222" font-size="14" font-family="Poppins-Light, Poppins" font-weight="300"><tspan x="-63.959" y="0">Your activity dates</tspan></text>
+    <g id="Group_159" data-name="Group 159" transform="translate(1005 986)">
+      <path id="Path_24" data-name="Path 24" d="M12830,8802.434v-88.069l-.391-43.611,62.92-44.5,63.125,44.5,62.979-44.183,63.013-44.441,62.956,44.007,62.929,44.665,63-44.391,62.781-44.411,63.661.025-.069,220.4Z" transform="translate(-12717.499 -8509)" fill="url(#linear-gradient)"/>
+      <g id="Group_158" data-name="Group 158" transform="translate(48.5 30.188)">
+        <rect id="Rectangle_112" data-name="Rectangle 112" width="1" height="264" rx="0.5" transform="translate(0 -0.188)" fill="#ddd"/>
+        <rect id="Rectangle_112-2" data-name="Rectangle 112" width="1" height="264" rx="0.5" transform="translate(63 -0.188)" fill="#ddd" opacity="0.4"/>
+        <rect id="Rectangle_112-3" data-name="Rectangle 112" width="1" height="264" rx="0.5" transform="translate(126 -0.188)" fill="#ddd" opacity="0.4"/>
+        <rect id="Rectangle_112-4" data-name="Rectangle 112" width="1" height="264" rx="0.5" transform="translate(189 -0.188)" fill="#ddd" opacity="0.4"/>
+        <rect id="Rectangle_112-5" data-name="Rectangle 112" width="1" height="264" rx="0.5" transform="translate(252 -0.188)" fill="#ddd" opacity="0.4"/>
+        <rect id="Rectangle_112-6" data-name="Rectangle 112" width="1" height="264" rx="0.5" transform="translate(315 -0.188)" fill="#ddd" opacity="0.4"/>
+        <rect id="Rectangle_112-7" data-name="Rectangle 112" width="1" height="264" rx="0.5" transform="translate(378 -0.188)" fill="#ddd" opacity="0.4"/>
+        <rect id="Rectangle_112-8" data-name="Rectangle 112" width="1" height="264" rx="0.5" transform="translate(441 -0.188)" fill="#ddd" opacity="0.4"/>
+        <rect id="Rectangle_112-9" data-name="Rectangle 112" width="1" height="264" rx="0.5" transform="translate(504 -0.188)" fill="#ddd" opacity="0.4"/>
+        <rect id="Rectangle_112-10" data-name="Rectangle 112" width="1" height="264" rx="0.5" transform="translate(567 -0.188)" fill="#ddd" opacity="0.4"/>
+        <rect id="Rectangle_112-11" data-name="Rectangle 112" width="1" height="264" rx="0.5" transform="translate(630 -0.188)" fill="#ddd" opacity="0.4"/>
+      </g>
+      <text id="Oct_30" data-name="Oct 30" transform="translate(301.5 312)" fill="#222" font-size="13" font-family="Poppins-Light, Poppins" font-weight="300" opacity="0.7"><tspan x="-21.008" y="0">Oct 30</tspan></text>
+      <text id="Oct_29" data-name="Oct 29" transform="translate(238.5 312)" fill="#222" font-size="13" font-family="Poppins-Light, Poppins" font-weight="300" opacity="0.7"><tspan x="-20.982" y="0">Oct 29</tspan></text>
+      <text id="Oct_28" data-name="Oct 28" transform="translate(174.5 312)" fill="#222" font-size="13" font-family="Poppins-Light, Poppins" font-weight="300" opacity="0.7"><tspan x="-20.976" y="0">Oct 28</tspan></text>
+      <text id="Oct_27" data-name="Oct 27" transform="translate(111.5 312)" fill="#222" font-size="13" font-family="Poppins-Light, Poppins" font-weight="300" opacity="0.7"><tspan x="-20.384" y="0">Oct 27</tspan></text>
+      <text id="_5_4_3_2_1_0" data-name="5
+4
+3
+2
+1
+0" transform="translate(34.5 78)" fill="#222" font-size="13" font-family="Poppins-Light, Poppins" font-weight="300"><tspan x="-4.01" y="0">5</tspan><tspan x="-3.985" y="44">4</tspan><tspan x="-3.803" y="88">3</tspan><tspan x="-3.718" y="132">2</tspan><tspan x="-1.898" y="176">1</tspan><tspan x="-4.004" y="220">0</tspan></text>
+      <text id="Events_attended" data-name="Events attended" transform="translate(14 162) rotate(-90)" fill="#222" font-size="14" font-family="Poppins-Light, Poppins" font-weight="300"><tspan x="-56.413" y="0">Events attended</tspan></text>
+      <text id="Oct_31" data-name="Oct 31" transform="translate(364.5 312)" fill="#222" font-size="13" font-family="Poppins-Light, Poppins" font-weight="300" opacity="0.7"><tspan x="-18.902" y="0">Oct 31</tspan></text>
+      <text id="Nov_1" data-name="Nov 1" transform="translate(427.5 312)" fill="#222" font-size="13" font-family="Poppins-Light, Poppins" font-weight="300" opacity="0.7"><tspan x="-15.866" y="0">Nov 1</tspan></text>
+      <text id="Nov_2" data-name="Nov 2" transform="translate(489.5 312)" fill="#222" font-size="13" font-family="Poppins-Light, Poppins" font-weight="300" opacity="0.7"><tspan x="-17.687" y="0">Nov 2</tspan></text>
+      <text id="Nov_3" data-name="Nov 3" transform="translate(553.5 312)" fill="#222" font-size="13" font-family="Poppins-Light, Poppins" font-weight="300" opacity="0.7"><tspan x="-17.771" y="0">Nov 3</tspan></text>
+      <text id="Nov_4" data-name="Nov 4" transform="translate(616.5 312)" fill="#222" font-size="13" font-family="Poppins-Light, Poppins" font-weight="300" opacity="0.7"><tspan x="-17.953" y="0">Nov 4</tspan></text>
+      <text id="Nov_5" data-name="Nov 5" transform="translate(678.5 312)" fill="#222" font-size="13" font-family="Poppins-Light, Poppins" font-weight="300" opacity="0.7"><tspan x="-17.979" y="0">Nov 5</tspan></text>
+      <g id="Group_157" data-name="Group 157" transform="translate(48.5 73)">
+        <rect id="Rectangle_111" data-name="Rectangle 111" width="677" height="1" rx="0.5" fill="#ddd" opacity="0.4"/>
+        <rect id="Rectangle_111-2" data-name="Rectangle 111" width="677" height="1" rx="0.5" transform="translate(0 44)" fill="#ddd" opacity="0.4"/>
+        <rect id="Rectangle_111-3" data-name="Rectangle 111" width="677" height="1" rx="0.5" transform="translate(0 88)" fill="#ddd" opacity="0.4"/>
+        <rect id="Rectangle_111-4" data-name="Rectangle 111" width="677" height="1" rx="0.5" transform="translate(0 132)" fill="#ddd" opacity="0.4"/>
+        <rect id="Rectangle_111-5" data-name="Rectangle 111" width="677" height="1" rx="0.5" transform="translate(0 176)" fill="#ddd" opacity="0.4"/>
+        <rect id="Rectangle_111-6" data-name="Rectangle 111" width="677" height="1" rx="0.5" transform="translate(0 220)" fill="#ddd"/>
+      </g>
+      <g id="Graph_dot" data-name="Graph dot" transform="translate(107.5 158)">
+        <g transform="matrix(1, 0, 0, 1, -108.5, -128)" filter="url(#Ellipse_9)">
+          <g id="Ellipse_9-11" data-name="Ellipse 9" transform="translate(108.5 128)" fill="#ff385c" stroke="#fff" stroke-width="3">
+            <circle cx="4" cy="4" r="4" stroke="none"/>
+            <circle cx="4" cy="4" r="5.5" fill="none"/>
+          </g>
+        </g>
+      </g>
+      <g id="Graph_dot-2" data-name="Graph dot" transform="translate(171.5 113)">
+        <g transform="matrix(1, 0, 0, 1, -172.5, -83)" filter="url(#Ellipse_9-2)">
+          <g id="Ellipse_9-12" data-name="Ellipse 9" transform="translate(172.5 83)" fill="#ff385c" stroke="#fff" stroke-width="3">
+            <circle cx="4" cy="4" r="4" stroke="none"/>
+            <circle cx="4" cy="4" r="5.5" fill="none"/>
+          </g>
+        </g>
+      </g>
+      <g id="Graph_dot-3" data-name="Graph dot" transform="translate(234.5 157)">
+        <g transform="matrix(1, 0, 0, 1, -235.5, -127)" filter="url(#Ellipse_9-3)">
+          <g id="Ellipse_9-13" data-name="Ellipse 9" transform="translate(235.5 127)" fill="#ff385c" stroke="#fff" stroke-width="3">
+            <circle cx="4" cy="4" r="4" stroke="none"/>
+            <circle cx="4" cy="4" r="5.5" fill="none"/>
+          </g>
+        </g>
+      </g>
+      <g id="Graph_dot-4" data-name="Graph dot" transform="translate(297.5 113)">
+        <g transform="matrix(1, 0, 0, 1, -298.5, -83)" filter="url(#Ellipse_9-4)">
+          <g id="Ellipse_9-14" data-name="Ellipse 9" transform="translate(298.5 83)" fill="#ff385c" stroke="#fff" stroke-width="3">
+            <circle cx="4" cy="4" r="4" stroke="none"/>
+            <circle cx="4" cy="4" r="5.5" fill="none"/>
+          </g>
+        </g>
+      </g>
+      <g id="Graph_dot-5" data-name="Graph dot" transform="translate(360.5 69)">
+        <g transform="matrix(1, 0, 0, 1, -361.5, -39)" filter="url(#Ellipse_9-5)">
+          <g id="Ellipse_9-15" data-name="Ellipse 9" transform="translate(361.5 39)" fill="#ff385c" stroke="#fff" stroke-width="3">
+            <circle cx="4" cy="4" r="4" stroke="none"/>
+            <circle cx="4" cy="4" r="5.5" fill="none"/>
+          </g>
+        </g>
+      </g>
+      <g id="Graph_dot-6" data-name="Graph dot" transform="translate(423.5 113)">
+        <g transform="matrix(1, 0, 0, 1, -424.5, -83)" filter="url(#Ellipse_9-6)">
+          <g id="Ellipse_9-16" data-name="Ellipse 9" transform="translate(424.5 83)" fill="#ff385c" stroke="#fff" stroke-width="3">
+            <circle cx="4" cy="4" r="4" stroke="none"/>
+            <circle cx="4" cy="4" r="5.5" fill="none"/>
+          </g>
+        </g>
+      </g>
+      <g id="Graph_dot-7" data-name="Graph dot" transform="translate(486.5 157)">
+        <g transform="matrix(1, 0, 0, 1, -487.5, -127)" filter="url(#Ellipse_9-7)">
+          <g id="Ellipse_9-17" data-name="Ellipse 9" transform="translate(487.5 127)" fill="#ff385c" stroke="#fff" stroke-width="3">
+            <circle cx="4" cy="4" r="4" stroke="none"/>
+            <circle cx="4" cy="4" r="5.5" fill="none"/>
+          </g>
+        </g>
+      </g>
+      <g id="Graph_dot-8" data-name="Graph dot" transform="translate(549.5 113)">
+        <g transform="matrix(1, 0, 0, 1, -550.5, -83)" filter="url(#Ellipse_9-8)">
+          <g id="Ellipse_9-18" data-name="Ellipse 9" transform="translate(550.5 83)" fill="#ff385c" stroke="#fff" stroke-width="3">
+            <circle cx="4" cy="4" r="4" stroke="none"/>
+            <circle cx="4" cy="4" r="5.5" fill="none"/>
+          </g>
+        </g>
+      </g>
+      <g id="Graph_dot-9" data-name="Graph dot" transform="translate(612.5 69)">
+        <g transform="matrix(1, 0, 0, 1, -613.5, -39)" filter="url(#Ellipse_9-9)">
+          <g id="Ellipse_9-19" data-name="Ellipse 9" transform="translate(613.5 39)" fill="#ff385c" stroke="#fff" stroke-width="3">
+            <circle cx="4" cy="4" r="4" stroke="none"/>
+            <circle cx="4" cy="4" r="5.5" fill="none"/>
+          </g>
+        </g>
+      </g>
+      <g id="Graph_dot-10" data-name="Graph dot" transform="translate(674.5 69)">
+        <g transform="matrix(1, 0, 0, 1, -675.5, -39)" filter="url(#Ellipse_9-10)">
+          <g id="Ellipse_9-20" data-name="Ellipse 9" transform="translate(675.5 39)" fill="#ff385c" stroke="#fff" stroke-width="3">
+            <circle cx="4" cy="4" r="4" stroke="none"/>
+            <circle cx="4" cy="4" r="5.5" fill="none"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

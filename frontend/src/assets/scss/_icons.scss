@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'unified';
+  src: url('../fonts/unified.eot?o9j724');
+  src: url('../fonts/unified.eot?o9j724#iefix') format('embedded-opentype'),
+    url('../fonts/unified.ttf?o9j724') format('truetype'),
+    url('../fonts/unified.woff?o9j724') format('woff'),
+    url('../fonts/unified.svg?o9j724#unified') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'unified' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-check:before {
+  content: "\e918";
+}
+.icon-bell:before {
+  content: "\e900";
+}
+
+.icon-calendar:before {
+  content: "\e901";
+}
+
+.icon-category:before {
+  content: "\e902";
+}
+
+.icon-cross:before {
+  content: "\e903";
+}
+
+.icon-down-arrow:before {
+  content: "\e904";
+}
+
+.icon-facebook:before {
+  content: "\e905";
+}
+
+.icon-globe:before {
+  content: "\e906";
+}
+
+.icon-golf:before {
+  content: "\e907";
+}
+
+.icon-heart:before {
+  content: "\e908";
+}
+
+.icon-instagram:before {
+  content: "\e909";
+}
+
+.icon-kitesurf:before {
+  content: "\e90a";
+}
+
+.icon-menu:before {
+  content: "\e90b";
+}
+
+.icon-location:before {
+  content: "\e90c";
+}
+
+.icon-logo:before {
+  content: "\e90d";
+}
+
+.icon-mic:before {
+  content: "\e90e";
+}
+
+.icon-music:before {
+  content: "\e90f";
+}
+
+.icon-next:before {
+  content: "\e910";
+}
+
+.icon-pinterest:before {
+  content: "\e911";
+}
+
+.icon-prev:before {
+  content: "\e912";
+}
+
+.icon-star:before {
+  content: "\e913";
+}
+
+.icon-swimming:before {
+  content: "\e914";
+}
+
+.icon-theatre:before {
+  content: "\e915";
+}
+
+.icon-thumbs-up:before {
+  content: "\e916";
+}
+
+.icon-twitter:before {
+  content: "\e917";
+}

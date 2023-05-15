@@ -1,0 +1,280 @@
+// Xolors
+$bgDefault: #F9F7F2;
+$primary: #FF385C;
+$secondary: #222;
+$border: #ddd;
+$white: #fff;
+$black: #000;
+$bgLight: #F5F5F5;
+
+
+// Breakpoints
+$xs: 360px !default;
+$sm: 576px !default;
+$md: 768px !default;
+$lg: 992px !default;
+$xl: 1200px !default;
+$xxl: 1400px !default;
+$xxxl: 1600px !default;
+
+$gutter: 1rem !default;
+
+.container {
+  max-width: 100%;
+  width: 100%;
+  padding: 0 $gutter;
+  margin: 0 auto;
+  display: block;
+
+  @media screen and (min-width: $sm) {
+    max-width: calc($sm - calc($gutter * 2));
+  }
+  @media screen and (min-width: $md) {
+    max-width: calc($md - calc($gutter * 2));
+  }
+  @media screen and (min-width: $lg) {
+    max-width: calc($lg - calc($gutter * 2));
+  }
+  @media screen and (min-width: $xl) {
+    max-width: calc($xl - calc($gutter * 2));
+  }
+  @media screen and (min-width: $xxl) {
+    max-width: calc($xxl - calc($gutter * 2));
+  }
+  @media screen and (min-width: $xxxl) {
+    max-width: calc($xxxl - calc($gutter * 2));
+  }
+  &--fluid {
+    width: 100%;
+  }
+}
+
+$easeTime: 500ms;
+// Transitions
+$linkTransitions: color $easeTime ease, background-color $easeTime ease;
+
+div[class^="col_"] {
+    padding: 0 $gutter;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -$gutter;
+    margin-right: -$gutter;
+
+    >* {
+        flex-shrink: 0;
+        width: 100%;
+    }
+}
+
+
+// Grid loop
+$columns: 12; // Max number of columns
+
+.col_flex {
+    width: 100%;
+
+    &--inline {
+        width: auto;
+    }
+}
+
+// Grid cells for small devices
+@for $i from 1 through $columns {
+    .col_x#{$i} {
+        flex: 0 0 auto;
+        width: calc(100% / #{$columns} * #{$i});
+    }
+}
+
+// Grid cells for small-medium devices
+@media (min-width: $sm) {
+    @for $i from 1 through $columns {
+        .col_sm_#{$i} {
+            flex: 0 0 auto;
+            width: calc(100% / #{$columns} * #{$i});
+        }
+
+        .col_sm_offset_#{$i} {
+            margin-left: calc(100% / #{$columns} * #{$i});
+        }
+    }
+}
+
+// Grid cells for medium devices
+@media (min-width: $md) {
+    @for $i from 1 through $columns {
+        .col_md_#{$i} {
+            flex: 0 0 auto;
+            width: calc(100% / #{$columns} * #{$i});
+        }
+
+        .col_md_offset_#{$i} {
+            margin-left: calc(100% / #{$columns} * #{$i});
+        }
+    }
+}
+
+// Grid cells for large devices
+@media (min-width: $lg) {
+    @for $i from 1 through $columns {
+        .col_lg_#{$i} {
+            flex: 0 0 auto;
+            width: calc(100% / #{$columns} * #{$i});
+        }
+
+        .col_lg_offset_#{$i} {
+            margin-left: calc(100% / #{$columns} * #{$i});
+        }
+    }
+}
+
+// Grid cells for extra large devices
+@media (min-width: $xl) {
+    @for $i from 1 through $columns {
+        .col_xl_#{$i} {
+            flex: 0 0 auto;
+            width: calc(100% / #{$columns} * #{$i});
+        }
+
+        .col_xl_offset_#{$i} {
+            margin-left: calc(100% / #{$columns} *#{$i});
+        }
+    }
+}
+
+// Grid cells for extra-extra large devices
+@media (min-width: $xxl) {
+    @for $i from 1 through $columns {
+        .row>.col_xxl_#{$i} {
+            flex: 0 0 auto;
+            width: calc(100% / #{$columns} * #{$i});
+        }
+
+        .col_xxl_offset_#{$i} {
+            margin-left: calc(100% / #{$columns} * #{$i});
+        }
+    }
+}
+
+@mixin font($fontFamily,$fontSize,$fontWeight,$lineHeight){
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    line-height: $lineHeight;
+}
+
+@mixin flex($alignItems,$justifyContent){
+    display: flex;
+    align-items: $alignItems;
+    justify-content: $justifyContent;
+}
+
+// Common css
+.nowrap{
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn{
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid $secondary;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  transition: all $easeTime ease;
+
+  &__black{
+    background-color: $secondary;
+    color: $white;
+
+    &:hover{
+      background-color: $primary;
+      border-color: $primary;
+    }
+  }
+
+  &__white{
+    background-color: $white;
+    border-radius: 8px;
+    padding: 1rem 25px;
+    color: $secondary;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 18px;
+    border: 1px solid $white;
+    cursor: pointer;
+    transition: all $easeTime ease;
+    text-align: center;
+    display: block;
+    width: fit-content;
+
+    &:hover{
+        background-color: $black;
+        color: $white;
+        border-color: $black;
+    }
+
+    @media screen and (max-width: $sm){
+        width: 100%;
+    }
+  }
+
+  &__transparent{
+    background-color: transparent;
+    color: $secondary;
+    padding: 1rem 25px;
+    border: 1px solid $secondary;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 300;
+    width: fit-content;
+    text-align: center;
+    display: block;
+    transition: all $easeTime ease;
+
+    &:hover{
+        background-color: $secondary;
+        color: $white;
+    }
+
+    @media screen and (max-width: $sm){
+        width: 100%;
+    }
+  }
+
+  &__red{
+    background-color: $primary;
+    border-radius: 6px;
+    padding: 1.2rem 40px;
+    color: $white;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 25px;
+    border: 1px solid $primary;
+    cursor: pointer;
+    transition: all $easeTime ease;
+    text-align: center;
+    display: block;
+    width: fit-content;
+
+    &:hover{
+        background-color: $white;
+        color: $primary;
+    }
+
+    @media screen and (max-width: $sm){
+        width: 100%;
+    }
+  }
+}

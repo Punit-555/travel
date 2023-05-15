@@ -1,0 +1,65 @@
+@use './_variables' as *;
+
+.consent{
+    padding: 80px 0;
+
+    &__page{
+        max-width: 860px;
+        margin: auto;
+        background-color: $white;
+        border: 1px solid $border;
+        padding: 50px 70px;
+        margin-top: 50px;
+
+        @media screen and (max-width: $md){
+            padding: 40px;
+            margin-top: 20px;
+        }
+        @media screen and (max-width: $sm){ 
+            width: 100%;
+            border: 0;
+            padding: 0;
+        }
+    }
+
+    &__title{
+        font-size: 1.875rem;
+        font-weight: 400;
+        line-height: 46px;
+        color: $secondary;
+        margin-bottom: 10px;
+    }
+
+    &__subtitle{
+        font-size: 1rem;
+        font-weight: 500;
+        color: $secondary;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+
+    &__content{
+        height: 500px;
+        overflow-y: auto;
+        padding-right: 10px;
+
+        @media screen and (max-width: $sm){
+            height: auto;
+        }
+
+        &--desc{
+            font-size: 0.875rem;
+            font-weight: 300;
+            line-height: 24px;
+            color: $secondary;
+            margin-bottom: 30px;
+        }
+        &--title{
+            font-size: 1rem;
+            font-weight: 500;
+            color: $secondary;
+            margin-bottom: 10px;
+            line-height: 24px;
+        }
+    }
+}

@@ -1,0 +1,333 @@
+@use './_variables' as *;
+
+.feedback{
+    &__banner{
+        margin-top: 100px;
+        background-image: url('../img/bg.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        @media screen and (max-width: $md){
+            margin-top: 80px;
+            height: calc(100vh - 80px);
+        }
+
+        .container{
+            padding-top: 80px;
+            padding-bottom: 80px;
+            @media screen and (max-width: $md){
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+        }
+        .container--fluid{
+            position: relative;
+            z-index: 10;
+        }
+
+        .backdrop--filter{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 5;
+            background: rgba(255,255,255,0.7);
+            backdrop-filter: blur(30px);
+        }
+
+        &--info{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            @media screen and (max-width: $lg){
+                margin-bottom: 20px;
+            }
+        }
+
+        &--icon{
+            margin-bottom: 10px;
+            img{
+                width: 80px;
+                height: 80px;
+                object-fit: contain;
+
+                @media screen and (max-width: $sm){
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+
+        &--title{
+            font-size: 2.25rem;
+            font-weight: 400;
+            line-height: 44px;
+            margin-bottom: 16px;
+            letter-spacing: 1.19px;
+
+            @media screen and (max-width: $md){
+                font-size: 2rem;
+                margin-bottom: 10px;
+            }
+        }
+
+        &--subtitle{
+            font-size: 2.25rem;
+            font-weight: 400;
+            line-height: 44px;
+            margin-bottom: 10px;
+
+            @media screen and (max-width: $md){
+                font-size: 1.5rem;
+                line-height: 30px;
+            }
+        }
+
+        &--description{
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: 36px;
+            margin: 0;
+
+            @media screen and (max-width: $md){
+                font-size: 1.2rem;
+                line-height: 30px;
+            }
+        }
+
+        &--graphic{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+
+    &__title{
+        font-size: clamp(30px, 3vw, 36px);
+        font-weight: 400;
+        line-height: 1.4;
+        color: $secondary;
+        margin-bottom: 20px;
+        letter-spacing: 1.19px;
+    }
+
+    &__cards{
+        padding: 50px 250px 0 250px;
+
+        @media screen and (max-width: $xl){
+            padding: 50px 0 0 0;
+        }
+    }
+
+    &__list{
+        &--item{
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: 30px 0;
+            border-bottom: 1px solid $border;
+
+            &:last-child{
+                border: 0;
+            }
+
+            @media screen and (max-width: $md){
+                flex-direction: column;
+            }
+        }
+
+        &--image{
+            position: relative;
+            width: 300px;
+            height: 330px;
+            margin-right: 40px;
+            flex: 0 0 300px;
+
+            @media screen and (max-width: $lg){
+                flex: 0 0 220px;
+            }
+
+            @media screen and (max-width: $md){
+                width: 100%;
+                height: 350px;
+                margin-bottom: 10px;
+                flex: none;
+            }
+
+            .card--image{
+                width: 100%;
+                height: 100%;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+            }
+
+            .card--text{
+                background: transparent linear-gradient(180deg, #00000000 0%, #000000 100%);
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 1;
+                border-radius: 0 0 10px 10px;
+                padding: 70px 20px 20px 20px;
+                h4{
+                    font-family: 'Brown' !important;
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    line-height: 20px;
+                    color: $white;
+                    margin-bottom: 6px;
+                }
+                p,a{
+                    font-size: 1rem;
+                    font-weight: 400;
+                    line-height: 18px;
+                    color: $white;
+                    margin: 0;
+                }
+                a{
+                    text-decoration: underline;
+                    transition: all $easeTime ease;
+
+                    &:hover{
+                        color: $primary;
+                        transition: all $easeTime ease;
+                    }
+                }
+            }
+
+            .card--review{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 0.5rem;
+
+                p{
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+
+                .icon{
+                    font-size: 1rem;
+                    font-weight: 300;
+                    color: $white;
+                }
+                .icon-star{
+                    color: #FFEE00;
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        &--content{
+            .card--date{
+                @include font('Brown', 1rem, 400, 1);
+                color: $secondary;
+                opacity: 0.7;
+                margin-bottom: 20px;
+                padding-top: 10px;
+            }
+
+            .card--title{
+                font-size: 1.5rem;
+                font-weight: 400;
+                color: $secondary;
+                margin-bottom: 8px;
+                line-height: 1.4;
+            }
+
+            .card--description{
+                font-size: 1.2rem;
+                font-weight: 400;
+                color: $secondary;
+                line-height: 28px;
+                margin-bottom: 30px;
+            }
+
+            .card--subtitle{
+                font-size: 1.5rem;
+                font-weight: 300;
+                line-height: 36px;
+                color: $secondary;
+                margin-bottom: 40px;
+            }
+
+            .btn{
+                @include font('BrownMedium', 1.2rem, 400, 1);
+                width: fit-content;
+                padding: 1.2rem 2rem;
+
+                @media screen and (max-width: $sm){
+                    width: 100%;
+                }
+            }
+
+            .emotion{
+                &__list{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+
+                    @media screen and (max-width: $md){
+                        justify-content: space-between;
+                    }
+
+                    &--item{
+                        margin-right: 20px;
+
+                        @media screen and (max-width: $md){
+                            margin-right: 0;
+                        }
+
+                        img{
+                            filter: grayscale(1);
+                            border-radius: 50%;
+                            cursor: pointer;
+                            transition: all $easeTime ease;
+
+                            @media screen and (max-width: $md){
+                                width: 45px;
+                                height: 45px;
+                            }
+                        }
+
+                        &.active{
+                            img{
+                                filter: grayscale(0);
+                                transition: all $easeTime ease;
+                            }
+                        }
+
+                        &:hover{
+                            img{
+                                filter: grayscale(0);
+                                transform: scale(1.1) translateY(-4px);
+                                transition: all $easeTime ease;
+                                box-shadow: 0px 3px 16px #00000024;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

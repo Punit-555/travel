@@ -1,0 +1,53 @@
+.emoji-arcs {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 200px;
+  }
+  
+  .arc {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 200px;
+	clip: rect(0, 200px, 200px, 100px);
+	transform: rotate(0deg);
+	transform-origin: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 36px;
+  }
+  
+  .arc-1 {
+	background-color: red;
+	clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 50%);
+  }
+  
+  .arc-2 {
+	background-color: orange;
+	clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 50%);
+	transform: rotate(72deg);
+  }
+  
+  .arc-3 {
+	background-color: yellow;
+	clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 50%);
+	transform: rotate(144deg);
+  }
+  
+  .arc-4 {
+	background-color: green;
+	clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 50%);
+	transform: rotate(216deg);
+  }
+  
+  .arc-5 {
+	background-color: blue;
+	clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 50%);
+	transform: rotate(288deg);
+  }
+  

@@ -1,0 +1,498 @@
+@use "./_variables" as *;
+
+.profile {
+  padding: 80px 0 0 0;
+
+  &__page {
+    max-width: 1040px;
+    margin: auto;
+    background-color: $white;
+    border: 1px solid $border;
+    padding: 50px 70px;
+    margin-top: 50px;
+    position: relative;
+
+    @media screen and (max-width: $md) {
+      padding: 40px;
+      margin-top: 20px;
+    }
+
+    @media screen and (max-width: $sm) {
+      width: 100%;
+      border: 0;
+      padding: 0;
+      background-color: transparent;
+    }
+  }
+
+  &__skip {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 16px;
+    font-weight: 300;
+    color: $secondary;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all $easeTime ease;
+
+    @media screen and (max-width: $md) {
+      top: 15px;
+      right: 5px;
+    }
+
+    &:hover {
+      color: $primary;
+      opacity: 1;
+      transition: all $easeTime ease;
+    }
+  }
+
+  &__title {
+    font-size: clamp(30px, 3vw, 36px);
+    font-weight: 400;
+    line-height: 40px;
+    color: $secondary;
+    margin-bottom: 30px;
+    letter-spacing: 1.19px;
+  }
+
+  &__subtitle {
+    font-size: 1rem;
+    font-weight: 300;
+    color: $secondary;
+    line-height: 24px;
+    margin-bottom: 30px;
+    padding-right: 40%;
+
+    @media screen and (max-width: $md) {
+      padding-right: 0;
+    }
+  }
+
+  &__content {
+    &--title {
+      font-size: 14px;
+      font-weight: 500;
+      color: $secondary;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: $md) {
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: $sm) {
+      width: 100%;
+    }
+
+    &--item {
+      cursor: pointer;
+
+      @media screen and (max-width: $md) {
+        width: 100%;
+        margin: 0 0 20px 0;
+      }
+
+      .profile__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .profile__image {
+          width: 160px;
+          height: 160px;
+          border-radius: 16px;
+          margin-bottom: 16px;
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all $easeTime ease;
+
+          @media screen and (max-width: $md) {
+            width: 100%;
+            height: 200px;
+          }
+
+          &--abstract {
+            border-radius: 16px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-image: url("../img/abstract.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 10;
+          }
+
+          &--overlay {
+            background-color: $secondary;
+            opacity: 0.3;
+            border-radius: 16px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 20;
+            transition: all $easeTime ease;
+          }
+
+          img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 16px;
+            position: relative;
+            z-index: 30;
+          }
+
+          &:hover {
+            .profile__image--overlay {
+              opacity: 0.6;
+              transition: all $easeTime ease;
+            }
+          }
+        }
+
+        .profile__name {
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 25px;
+          margin-bottom: 20px;
+          color: $secondary;
+        }
+
+        .profile__manage {
+          opacity: 0;
+          visibility: hidden;
+          transition: all $easeTime ease;
+
+          a {
+            display: block;
+          }
+
+          @media screen and (max-width: $md) {
+            opacity: 1;
+            visibility: visible;
+          }
+
+          @media screen and (max-width: $sm) {
+            width: 100%;
+          }
+        }
+      }
+
+      &.active {
+        .profile__manage {
+          opacity: 1;
+          visibility: visible;
+          transition: all $easeTime ease;
+        }
+      }
+    }
+  }
+
+  .userPreferences {
+    .profile__title {
+      margin-bottom: 40px;
+    }
+
+    .profile__subtitle {
+      padding: 0;
+      margin-bottom: 0;
+    }
+
+    .profile__content {
+      margin-top: 25px;
+      margin-bottom: 40px;
+      width: 100%;
+
+      .profile__content--title {
+        font-weight: 300;
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .activity__list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 1rem;
+
+      .activity__list--item {
+        cursor: pointer;
+
+        .activity__info {
+          width: 100%;
+          height: 100%;
+          position: relative;
+
+          .activity__image {
+            width: 100%;
+            height: 100%;
+
+            img {
+              width: 100%;
+              height: 100%;
+              border-radius: 4px;
+              object-fit: cover;
+              object-position: center;
+            }
+
+            .activity__image--overlay {
+              background: transparent
+                linear-gradient(180deg, #22222200 0%, #000000a1 100%);
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: 0;
+              bottom: 0;
+              z-index: 10;
+              border-radius: 4px;
+              transition: all $easeTime ease;
+              opacity: 0.5;
+            }
+
+            .activity__name {
+              font-family: "BrownMedium";
+              position: absolute;
+              bottom: 10px;
+              left: 50%;
+              z-index: 20;
+              transform: translateX(-50%);
+              font-size: 1rem;
+              line-height: 18px;
+              font-weight: 500;
+              color: $white;
+              text-align: center;
+              width: 100%;
+              padding: 0 10px;
+            }
+
+            &:hover {
+              .activity__image--overlay {
+                background-color: #000000a1;
+                opacity: 0.5;
+                transition: all $easeTime ease;
+              }
+            }
+          }
+
+          .activity__selected {
+            opacity: 0;
+            visibility: hidden;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 50;
+            background-color: rgba(34, 34, 34, 0.7);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .icon-thumbs-up {
+              color: $white;
+            }
+          }
+        }
+
+        &.active {
+          .activity__selected {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
+
+    .btn__red {
+      margin-top: 45px;
+    }
+  }
+
+  &__edit {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+
+    @media screen and (max-width: $xl) {
+      flex-direction: column;
+    }
+
+    .profile__content {
+      margin-top: 0 !important;
+
+      @media screen and (max-width: $sm) {
+        width: 100%;
+      }
+
+      .form__group {
+        margin-bottom: 30px;
+
+        @media (min-width: $xl) {
+          max-width: 465px;
+        }
+
+        .form__label {
+          font-family: "Brown";
+          font-size: 1rem;
+          font-weight: 400;
+        }
+
+        .form__input {
+          font-size: 1.2rem;
+          border-radius: 6px;
+
+          @media screen and (max-width: $sm) {
+            background-color: transparent;
+          }
+        }
+      }
+
+      .activity__list {
+        margin-bottom: 30px;
+      }
+
+      .gender__list {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        &--item {
+          margin-right: 20px;
+          width: 120px;
+          height: 120px;
+          border: 1px solid $border;
+          border-radius: 6px;
+          cursor: pointer;
+          background-color: $white;
+          transition: all $easeTime ease;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          @media screen and (max-width: $sm) {
+            width: 80px;
+            height: 80px;
+          }
+
+          &:hover,
+          &.active {
+            background-color: $primary;
+            border-color: $primary;
+            transition: all $easeTime ease;
+
+            svg {
+              g {
+                opacity: 1;
+                color: $white;
+                transition: all $easeTime ease;
+              }
+
+              path {
+                opacity: 1;
+                fill: $white;
+                transition: all $easeTime ease;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .profile__image {
+      width: 160px !important;
+      flex: 0 0 160px;
+
+      @media screen and (max-width: $sm) {
+        width: 100% !important;
+        height: 250px !important;
+        flex: unset;
+      }
+    }
+
+    .btn--wrap {
+      display: flex;
+      align-items: center;
+
+      @media screen and (max-width: $sm) {
+        justify-content: space-between;
+      }
+
+      .btn {
+        margin: 0 20px 0 0 !important;
+        padding: 1rem 2rem;
+        height: 60px;
+        font-size: 1.2rem;
+        font-family: "BrownMedium";
+
+        @media screen and (max-width: $sm) {
+          margin: 0 !important;
+          width: 45%;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 50;
+    transform: translate(-50%, -50%);
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__main--image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 15;
+
+    img {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+  }
+}
+.error {
+  border: 2px solid red;
+}
+.error-text {
+  color: red;
+  margin-top: 2px;
+}
+.profile-uploads-input {
+  height: 100%;
+  cursor: pointer;
+  // border: 1px solid black;
+  width: 100%;
+  opacity: 0%;
+}

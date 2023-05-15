@@ -1,0 +1,18 @@
+@use './_variables' as *;
+
+.favorites{
+    .recommendations{
+        padding-top: 130px;
+
+        @media screen and (max-width: $md){
+            padding-top: 100px;
+        }
+
+        .recSlider__title{
+            font-size: clamp(30px, 3vw, 36px);
+        }
+        .recSlider__subtitle{
+            font-size: clamp(18px, 2vw, 24px);
+        }
+    }
+}

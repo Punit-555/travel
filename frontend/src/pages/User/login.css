@@ -1,0 +1,80 @@
+
+div{
+    display: block;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    margin: 105px auto;
+    padding: 20px;
+    text-align: center;
+    height: fit-content;  
+  }
+
+
+  .lab{
+    right: 135px !important;
+  }
+  
+  .card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  label {
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative;
+    right: 140px;
+    top: 5px;
+    bottom: 15px;
+  }
+  .firstLabel{
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bolder;
+    position: relative;
+    right: 150px;
+    top: 3px;
+    bottom: 4px;
+  }
+
+  input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  
+  button {
+    background-color: #FF385C;
+    color: white;
+    padding: 14px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  
+  button:hover {
+    background-color: #e35872;
+  }
+  

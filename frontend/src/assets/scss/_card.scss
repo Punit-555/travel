@@ -1,0 +1,180 @@
+@use './_variables' as *;
+
+.card{
+    &__grid{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem 1.25rem;
+    }
+    &__link{
+      text-decoration: none;
+    }
+    &__item{
+        &:hover{
+          .card__img {
+            transform: scale(1.2) rotate(4deg);
+            filter: hue-rotate(90deg);
+            transition: transform 2s ease;
+          }
+          .card__thumb{
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            transform: translateY(-5px);
+          }
+          .card__rating--link{
+            color: $primary;
+          }
+        }
+      }
+      &__thumb{
+        height: 400px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        transition: all 300ms ease;
+      }
+      &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: all 300ms ease;
+    }
+    &__fav{
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 48px;
+      height: 48px;
+      border: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba($secondary, 70%);
+      background-color: transparent;
+      font-size: 1.2rem;
+      padding: 0;
+      transition: color 300ms ease;
+      z-index: 1;
+      cursor: pointer;
+      &:hover{
+        color: $primary;
+      }
+    }
+    &__remove{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 4px 12px;
+        width: fit-content;
+        @include font('Brown', 0.875rem, 400, 1.2);
+        background-color: $white;
+        color: $primary;
+        border-radius: 14px;
+        z-index: 1;
+        cursor: pointer;
+        border: 1px solid $white;
+        transition: all $easeTime ease;
+
+        &:hover{
+            background-color: $primary;
+            border: 1px solid $primary;
+            color: $white;
+            transition: all $easeTime ease;
+        }
+    }
+
+    &__count{
+      position: absolute;
+      right: 1rem;
+      bottom: 1rem;
+      z-index: 1;
+    }
+    &__info {
+      margin-top: 1rem;
+      display: flex;
+      flex-flow: column;
+      width: 100%;
+      @extend .nowrap;
+    }
+    &__title {
+      @extend .nowrap;
+      font-size: 1.2rem;
+      font-weight: 600;
+      line-height: 1.8;
+      margin-top: 1rem;
+    }
+    &__price{
+        @include font('BrownLight', 1rem, 400, 20px);
+    }
+    &__row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 13px;
+      font-weight: 400;
+    }
+    &__date,
+    &__rating{
+      font-weight: inherit;
+
+      &--link{
+        @include font('BrownMedium', 1rem, 400, 1);
+        color: $secondary;
+        text-decoration: underline;
+        cursor: pointer;
+        transition: all $easeTime ease;
+
+        &:hover{
+            color: $primary;
+            transition: all $easeTime ease;
+        }
+      }
+
+      &__txt{
+        padding-right: 0.5rem;
+
+        &--link{
+          font-family: "BrownMedium";
+          text-decoration: underline;
+          &:hover{
+            color: $primary;
+          }
+        }
+      }
+    }
+
+    &__date{
+        @include font('BrownLight', 1rem, 400, 1);
+    }
+}
+
+.card__grid--dashboard{
+    .card__info{
+        margin-top: 0;
+        .card__title{
+            margin-bottom: 6px;
+        }
+        .card__date{
+            margin: 0.5rem 0 10px 0;
+        }
+        .card__rating{
+            @include font('BrownLight', 1rem, 400, 1);
+        }
+    }
+}
+
+.recommendations{
+    .card__title{
+        font-weight: 600;
+        margin-top: 6px;
+    }
+}
+
+.favorites, .event{
+    .card__title{
+        font-weight: 400;
+    }
+    .card__price{
+        opacity: 0.7;
+    }
+}
